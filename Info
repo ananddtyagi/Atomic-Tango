@@ -1,0 +1,25 @@
+[0](p) position: 0 = North, 1 = NorthEast, 2 = East, 3 = SouthEast, 4 = South, 5 = SouthWest, 6 = West, 7 = NorthWest (basically going clockwise)
+    Comment: north is in front of man, south is behind the man etc.
+[1](f) facing: 0 = towards, 1 = clockwise, 2 = away, 3 = counterclockwise
+    Comment: towards mean the woman is facing the man; clockwise means that
+             if the man is the center of a clock and she is the second hand then she
+             is facing in the direction of movement of the second hand.
+[2](wF) weightedFoot: 0 = right, 1 = left, 2 = none
+    Comment: which foot of the woman has weight. None means a lift.
+[3](uF) unweightedFoot: 0 = collected, 1 = crossed left forward, 2 = crossed right forward,
+                3 = forward, 4 = backward, 5 = in air forward, 6 = in air back, 7 = slid out
+    Comment: the unweighted foot could be collected, in a cross position
+             (either in front or back) etc.
+[4](l) leaning: 0 = neutral, 1 = away, 2 = towards
+    Comment: is the woman vertical or leaning either towards or away
+             from the man.
+[5](fC) footContact: 0 = none, 1 = manfoot inside femalefoot, 2 = manfoot outside femalefoot
+    Comment: is the man's foot touching the woman's foot and if so
+             which foot in both cases and is the foot on the outside or inside.
+             This captures all paradas.
+[6](tC) thighContact: 0 = none, 1 = leg man back to leg woman back, 2 = leg man front to leg woman back, 3 = leg man back to leg woman front
+    Comment: ganchos can be lower thigh to lower thigh, upper thigh
+             to lower thigh etc. Only one that isn't possible is upper to upper.
+[7](h) height: 0 = high, 1 = low
+    Comment: Is the couple very low, very high (e.g. for milonga), or
+             normal.
